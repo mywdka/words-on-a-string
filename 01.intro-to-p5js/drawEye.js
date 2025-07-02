@@ -1,26 +1,23 @@
 function setup() {
   createCanvas(400, 400);
-  background("peachpuff");
-
-  drawEye();
 }
 
-function drawEye() {
-
-  // eyelid
-  noStroke();
-  fill("salmon");
-  circle(200, 200, 75);
+function draw() {
+  background("antiquewhite");
 
   // sclera
   fill("white");
-  ellipse(205, 205, 60, 40);
+  circle(200, 200, 100);
+
+  // iris
+  fill("peachpuff");
+  circle(200, 200, 50);
 
   // pupil
   fill(0);
-  circle(205, 205, 30);
+  circle(200, 200, 15);
 
   // reflection
-  fill("skyblue");
-  circle(215, 200, 15);
+  fill(255, 125);
+  circle(215, 190, 20);
 }
