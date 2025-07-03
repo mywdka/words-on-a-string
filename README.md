@@ -1,4 +1,4 @@
 # words on a string
-Class material for "words on a string", the IAS course on interactive text in P5js
+Class material for "words on a string", the Interaction Station's course on animated typography in P5js
 
 ---
