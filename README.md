@@ -4,14 +4,14 @@ Class material for "words on a string", the Interaction Station's course on anim
 ---
 
 ## 01. Intro to P5js
-→ <code>drawEye.js</code>: shapes example
-→ <code>drawText.js</code>: text example
-→ <code>stepDown.js</code>: text example with increment operators
+→ <code>drawEye.js</code>: shapes example<br />
+→ <code>drawText.js</code>: text example<br />
+→ <code>stepDown.js</code>: text example with increment operators<br />
 
 ## 02. Interactive Behaviours
-→ <code>waterfall.js</code>: text example with mouse behaviour
-→ <code>lightsOn.js</code>: text example with conditional statement
-→ <code>floaty.js</code>: text example with noise animation
-→ <code>waves.js</code>: text example with sine animation
+→ <code>waterfall.js</code>: text example with mouse behaviour<br />
+→ <code>lightsOn.js</code>: text example with conditional statement<br />
+→ <code>floaty.js</code>: text example with noise animation<br />
+→ <code>waves.js</code>: text example with sine animation<br />
 
 ## 03. Datasets
