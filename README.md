@@ -14,4 +14,13 @@ Examples repository for <i>words on a string</i>: the Interaction Station's cour
 ⚠ EXTRA ⚠ → <code>handTracking.js</code>: uses machine learning to track hands and places text on fingers<br />
 
 ## 03. Datasets
-→ <code>listOfNames.js</code>: grabs and displays names for an online JSON dataset
+→ <code>listOfNames.js</code>: grabs and displays names for an online JSON dataset<br />
+
+---
+
+# Where to find fonts?
+🔗 <a href="https://open-foundry.com/fonts">Open Foundry</a><br />
+🔗 <a href="https://www.collletttivo.it/typefaces">Collletttivo</a><br />
+🔗 <a href="https://velvetyne.fr/">Velvetyne</a><br />
+🔗 <a href="https://luuse.io/categories/font/">Luuse</a> (especially <a href="http://hershey-noailles.luuse.io/www/">Hershey Noailles</a>)<br />
+🔗 <a href="https://typotheque.luuse.fun/">FreeFontLibrary</a><br />
