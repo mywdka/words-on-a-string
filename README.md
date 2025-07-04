@@ -1,7 +1,5 @@
 # words on a string
-Class material for <i>words on a string</i>, the Interaction Station's course on animated typography in P5js
-
----
+Class material for <i>words on a string</i>: the Interaction Station's course on animated typography in P5js
 
 ## 01. Intro to P5js
 → <code>drawEye.js</code>: shapes example<br />
