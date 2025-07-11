@@ -17,7 +17,6 @@ html, body {
   margin: auto;
   width: 50%;
   margin-top: 25vh;
-  border: 3px solid green; /* to debug: remove upon publication*/
   padding: 0.5em;
   text-align: center;
 
@@ -30,7 +29,6 @@ html, body {
   width: 75%;
   padding: 0.5em;
   text-align: center;
-
   font-size: 2em;
   font-family: 'Necto Mono'
 }
