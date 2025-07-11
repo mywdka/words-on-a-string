@@ -67,7 +67,7 @@ button {
 .text-on-the-side-left {
     writing-mode: sideways-lr;
     font-size: 1.5em;
-    word-wrap: balance;  /* if you want it centered alongside the table, use: */
+    word-wrap: balance;
     align-self: center;
     margin: auto;
     max-height:80%;
@@ -78,7 +78,7 @@ button {
 .text-on-the-side-right {
     writing-mode: sideways-rl;
     font-size: 1.5em;
-    word-wrap: balance;  /* if you want it centered alongside the table, use: */
+    word-wrap: balance; 
     align-self: center;
     margin: auto;
     max-height:80%;

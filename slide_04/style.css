@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Labrada';
+    src: url('../fonts/Labrada.ttf');
+}
+
+@font-face {
+    font-family: 'Necto Mono';
+    src: url('../fonts/NectoMono-Regular.otf');
+}
+
+body {
+    cursor: crosshair;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    margin:3em auto;
+    gap: 6em
+}
+
+.text-on-the-side {
+    width:20%;
+    margin-top: 10%;
+    margin-left: 1em
+}
+
+.sideText{
+    word-wrap: balance;
+    font-family: sans-serif;
+    font-size: 2em;
+    vertical-align: center;
+}
+
+.smaller-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    width:66%;
+    height:85vh;
+    overflow-y: auto;
+}
+
+.box {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+    /* border: 3px solid red; */
+}
+
+.title {
+    width: 33%;
+    margin: auto;
+    color: red;
+    text-align: center;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 0.2em;
+
+}
+
+.titleText {
+    font-family: 'Labrada';
+    font-size: 3em;
+    font-weight: bold;
+    /* border: 3px solid purple; */
+
+}
+
+.content {
+    word-wrap: balance;
+    width:66%;
+}
+
+.contentText {
+    font-family: 'Necto Mono';
+    font-size: 1.5em;
+    /* border: 3px solid blue; */
+    /* word-wrap: balance; */
+
+}
+
+button {
+    font-family: 'Necto Mono';
+    background-color: black;
+    color: white;
+    padding: 0.25em 1em 0.25em 1em;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-1em, -1em);
+}
