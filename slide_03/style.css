@@ -12,7 +12,7 @@ table.calendar th,
 table.calendar td {
     border: 2px solid #333;
     width: 20%;
-    height: 75px;
+    height: 66px;
     vertical-align: top;
     padding: 0.5em;
     text-align: center;
@@ -58,19 +58,28 @@ button {
     transform: translate(-1em, -1em);
 }
 
-.text-on-the-side {
-    /* border: 3px solid green; */
+.schedule-container {
+    display: flex;
+    align-items: flex-start;  
 
-    position: absolute;
-    bottom: 11%;
-    left: 8%;
-    /* top: 1em; */
+}
 
-    transform: rotate(-90deg);
-    transform-origin: bottom left;
-   
+.text-on-the-side-left {
+    writing-mode: sideways-lr;
+    font-size: 1.5em;
+    word-wrap: balance;  /* if you want it centered alongside the table, use: */
+    align-self: center;
+    margin: auto;
+    max-height:80%;
+    font-family: Karrik'
+}
 
-    width:80vh;
-    word-wrap: balance;
-    font-size:1.5em
+
+.text-on-the-side-right {
+    writing-mode: sideways-rl;
+    font-size: 1.5em;
+    word-wrap: balance;  /* if you want it centered alongside the table, use: */
+    align-self: center;
+    margin: auto;
+    max-height:80%;
 }
