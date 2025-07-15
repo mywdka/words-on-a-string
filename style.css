@@ -1,45 +1,22 @@
 @font-face {
-  font-family: 'Karrik';
-  src: url('fonts/Karrik-Regular.ttf');
+    font-family: 'Labrada';
+    src: url('fonts/Labrada.ttf');
 }
 
-@font-face {
-  font-family: 'Necto Mono';
-  src: url('fonts/NectoMono-Regular.otf');
+#words {
+    text-align:center;
+    font-family:'Labrada';
+    font-size:10em;
+    margin-top:50vh; /* brings text to center */
+    transform: translateY(-50%) /* centers text vertically */
 }
 
-html, body {
-  font-family: Tahoma, Arial, sans-serif;
-  cursor: crosshair;
-}
-
-#title{
-  margin: auto;
-  width: 50%;
-  margin-top: 25vh;
-  padding: 0.5em;
-  text-align: center;
-
-  font-size: 5em;
-  font-family: 'Karrik'
-}
-
-#subtitle{
-  margin: auto;
-  width: 75%;
-  padding: 0.5em;
-  text-align: center;
-  font-size: 2em;
-  font-family: 'Necto Mono'
-}
-button {
-  font-family: 'Necto Mono';
-  background-color: black;
-  color: white;
-  padding: 0.25em 1em 0.25em 1em;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(-1em, -1em);
+/* animation for text */
+@keyframes sine {
+    0%, 100% {
+        transform: translate(0,-25%)
+    }
+    50% {
+        transform: translate(0,25%)
+    }
 }

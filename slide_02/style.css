@@ -1,80 +1,17 @@
 @font-face {
-  font-family: 'Karrik';
-  src: url('../fonts/Karrik-Regular.ttf');
+    font-family: 'NectoMono-Regular';
+    src: url('fonts/.ttf');
 }
 
-@font-face {
-    font-family: 'Jokerman';
-    src: url('../fonts/Jokerman-Regular.ttf');
+#subtitle {
+    text-align:center;
+    font-family:'Necto Mono';
+    font-size:6em;
+    margin-top:50vh; /* brings text to center */
+    transform: translateY(-50%) /* centers text vertically */
 }
 
-@font-face {
-    font-family: 'Kbzipadeedoodah';
-    src: url('../fonts/Kbzipadeedoodah.ttf');
-}
-
-@font-face {
-    font-family: 'Polar Vortex';
-    src: url('../fonts/PolarVortex.ttf');
-}
-
-@font-face {
-    font-family: 'Uncle';
-    src: url('../fonts/Uncle.woff') format('woff');
-}
-
-html {
-    cursor: crosshair;
-}
-body {
-    width: 50%;
-    text-align: center;
-    margin: 1em auto;
-    padding: 1em;
-}
-
-.container {
-    font-family: 'Karrik';
-    font-size:2em;
-}
-
-button {
-  font-family: 'Necto Mono';
-  background-color: black;
-  color: white;
-  padding: 0.25em 1em 0.25em 1em;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(-1em, -1em);
-}
-
-.jokerman {
-    font-family: 'Jokerman' !important ;
-    color: deeppink;
-    font-size: 3em;
-}
-
-.kbzipadeedoodah {
-    font-family: 'Kbzipadeedoodah' !important ;
-    color: chartreuse;
-    font-size: 3em;
-}
-
-.polarVortex{
-    font-family: 'Polar Vortex' !important;
-    color: blue;
-    font-size: 3em;
-}
-
-.uncle{
-    font-family:'Uncle' !important ;
-    font-weight: normal;
-    color: orange;
-    font-size: 3em;
-}
-
+/* animation for text */
 @keyframes sine {
     0%, 100% {
         transform: translate(0,-25%)
