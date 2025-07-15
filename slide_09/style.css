@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Labrada";
+  src: url("../fonts/Labrada.ttf");
+}
+
+@font-face {
+  font-family: "Necto Mono";
+  src: url("../fonts/NectoMono-Regular.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Labrada";
+  text-align: center;
+}
+
+p {
+  font-family: "Necto Mono";
+  margin: auto;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.container {
+  padding: 1em;
+  display: flex;
+  max-width: 100vw;
+  align-items: stretch;
+}
+
+iframe {
+  flex: 0 0 66%;
+}
+
+.side-text {
+  flex: 0 0 20%;
+  word-wrap: break-word;
+}

@@ -9,7 +9,7 @@ function setup() {
   p5js.background(255);
   p5js.textFont("Labrada");
   p5js.textSize(256);
-  p5js.textWeight(600)
+  p5js.textWeight(600);
   p5js.textAlign(CENTER, CENTER);
   p5js.fill(0);
   p5js.text("p5*js", p5js.width / 2, p5js.height / 2);
@@ -18,7 +18,6 @@ function setup() {
   p5js.loadPixels();
 
   createCanvas(windowWidth, windowHeight); // create a visible canvas
-
 }
 
 function draw() {
@@ -36,9 +35,13 @@ function draw() {
     }
   }
 
-  pixelation = int(map(sin(frameCount * 0.02), -1, 1, 10, 50));
+  pixelation = int(map(frameCount, 0, 150, 50, 10));
+  if (pixelation < 10) {
+    noLoop();
+  }
 }
 
-function mousePressed(){
-    window.location.href = '../slide_09/'
+// on mouse pressed, move to next slide
+function mousePressed() {
+  window.location.href = "../slide_08/";
 }
