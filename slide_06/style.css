@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Hershey';
+    src: url('../fonts/Hershey-Noailles-Times-Triplex-Bold.otf');
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+    cursor: pointer;
+}
+
+/* centering canvas */
+canvas{
+  width:100%;
+  margin:50vh 0 0 50vw;
+  transform:translate(-50%,-50%);
+
+  border: 1px solid black;
+}
+
+a {
+  font-size:4em;
+  font-family: 'Hershey';
+  text-align: center;
+  width:100%;
+  animation: slide 2s ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

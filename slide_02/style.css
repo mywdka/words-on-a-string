@@ -1,22 +1,12 @@
 @font-face {
-    font-family: 'NectoMono-Regular';
-    src: url('fonts/.ttf');
+    font-family: 'Necto Mono';
+    src: url('../fonts/NectoMono-Regular.otf');
 }
 
 #subtitle {
-    text-align:center;
+    text-align: center;
     font-family:'Necto Mono';
     font-size:6em;
     margin-top:50vh; /* brings text to center */
     transform: translateY(-50%) /* centers text vertically */
-}
-
-/* animation for text */
-@keyframes sine {
-    0%, 100% {
-        transform: translate(0,-25%)
-    }
-    50% {
-        transform: translate(0,25%)
-    }
 }

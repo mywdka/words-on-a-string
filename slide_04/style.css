@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Labrada';
+    src: url('../fonts/Labrada.ttf');
+}
+
+p {
+    font-family: 'Labrada';
+    text-align: center;
+    font-size: 2em;
+}
+
+table.calendar {
+    font-family: 'Work Sans';
+    border-collapse: collapse;
+    width: 80%;
+    margin: 1em auto;
+}
+
+table.calendar td {
+    border: 2px solid #333;
+    width: 20%;
+    height: 8vh;
+    vertical-align: top;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.weekday{
+    color: grey
+}
+
+.event {
+    color: red;
+    font-size: 1.5em;
+    /* to animate using css you can assign the 'animation' feature to an existing class and... */
+    animation: breath 10s ease-in-out infinite;
+}
+
+/* ... connect it to a keyframed animation */
+@keyframes breath {
+    0%, 100% {font-weight: 200}
+    50% {font-weight: 1000}
+}

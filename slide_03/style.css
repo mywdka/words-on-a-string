@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Necto Mono';
+    src: url('../fonts/NectoMono-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Labrada';
+    src: url('../fonts/Labrada.ttf');
+}
+
+.welcome {
+    text-align:center;
+    font-family:'Necto Mono';
+    font-size:32pt;
+    margin-top:50vh; /* brings text to center */
+    transform: translateY(-50%) /* centers text vertically */
+}
+
+.course-title{
+    font-family: 'Labrada';
+    font-size:64pt;
+    animation: breath 10s ease-in-out infinite;
+}
+
+/* animation for text */
+@keyframes breath {
+    0%, 100% {
+        font-weight: 900;
+    }
+    50% {
+        font-weight: 100;
+    }
+}

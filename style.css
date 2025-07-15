@@ -1,22 +1,23 @@
 @font-face {
-    font-family: 'Labrada';
-    src: url('fonts/Labrada.ttf');
+  font-family: "Labrada";
+  src: url("fonts/Labrada.ttf");
 }
 
 #words {
-    text-align:center;
-    font-family:'Labrada';
-    font-size:10em;
-    margin-top:50vh; /* brings text to center */
-    transform: translateY(-50%) /* centers text vertically */
+  text-align: center;
+  font-family: "Labrada";
+  font-size: 10em;
+  margin-top: 50vh; /* brings text to center */
+  transform: translateY(-50%); /* centers text vertically */
 }
 
 /* animation for text */
 @keyframes sine {
-    0%, 100% {
-        transform: translate(0,-25%)
-    }
-    50% {
-        transform: translate(0,25%)
-    }
+  0%,
+  100% {
+    transform: translate(0, -25%);
+  }
+  50% {
+    transform: translate(0, 25%);
+  }
 }
