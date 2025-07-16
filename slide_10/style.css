@@ -1,8 +1,44 @@
+@font-face {
+  font-family: "Labrada";
+  src: url("../fonts/Labrada.ttf");
+}
+
+@font-face {
+  font-family: "Necto Mono";
+  src: url("../fonts/NectoMono-Regular.otf");
+}
+
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
-canvas {
-  display:block
+h1 {
+  color: red;
+  font-family: "Labrada";
+  font-size: 3em;
+}
+
+p {
+  font-family: "Necto Mono";
+  font-size: 1.5em;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.examples-container {
+  margin: auto;
+  width: 80vw;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+
+.caption {
+    font-family: 'Necto Mono';
 }

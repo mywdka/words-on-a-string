@@ -32,7 +32,7 @@ table.calendar td {
 .event {
     color: red;
     font-size: 1.5em;
-    /* to animate using css you can assign the 'animation' feature to an existing class and... */
+    /* to animate using css you can assign the 'animation' feature to the text's class (in this case, only when hovered) and... */
     animation: breath 10s ease-in-out infinite;
 }
 
@@ -41,3 +41,10 @@ table.calendar td {
     0%, 100% {font-weight: 200}
     50% {font-weight: 1000}
 }
+
+/* you can also change features of the text on "hover" (when the mouse is over the object) */
+.event:hover{
+    color: blue;
+    font-weight:1000 !important;
+}
+
