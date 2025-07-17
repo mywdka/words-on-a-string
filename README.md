@@ -5,8 +5,8 @@ This is the repository for the interactive syllabus of *words-on-a-string*, the 
 The syllabus is live at: [mywdka.github.io/words-on-a-string]
 
 ## Index
-[**Slide_01**](https://mywdka.github.io/words-on-a-string): title
-[**Slide_02**](https://mywdka.github.io/words-on-a-string/slide_02/): subtitle
+- [**Slide_01**](https://mywdka.github.io/words-on-a-string): title
+- [**Slide_02**](https://mywdka.github.io/words-on-a-string/slide_02/): subtitle
 
 [**Slide_03**](https://mywdka.github.io/words-on-a-string/slide_03/): welcome
 
