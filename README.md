@@ -5,14 +5,15 @@ This is the repository for the interactive syllabus of *words-on-a-string*, the 
 The syllabus is live at: [mywdka.github.io/words-on-a-string]
 
 ## Index
-- [**Slide_01**](https://mywdka.github.io/words-on-a-string): title
-- [**Slide_02**](https://mywdka.github.io/words-on-a-string/slide_02/): subtitle
+[**Slide_01**](https://mywdka.github.io/words-on-a-string): Title
 
-[**Slide_03**](https://mywdka.github.io/words-on-a-string/slide_03/): welcome
+[**Slide_02**](https://mywdka.github.io/words-on-a-string/slide_02/): Subtitle
 
-[**Slide_04**](https://mywdka.github.io/words-on-a-string/slide_04/): calendar
+[**Slide_03**](https://mywdka.github.io/words-on-a-string/slide_03/): Welcome
 
-[**Slide_05**](https://mywdka.github.io/words-on-a-string/slide_05/): classes
+[**Slide_04**](https://mywdka.github.io/words-on-a-string/slide_04/): Calendar
+
+[**Slide_05**](https://mywdka.github.io/words-on-a-string/slide_05/): Classes
 
 [**Slide_06**](https://mywdka.github.io/words-on-a-string/slide_06/): intermezzo (click to reveal words)
 
