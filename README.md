@@ -5,24 +5,42 @@ This is the repository for the interactive syllabus of *words-on-a-string*, the 
 The syllabus is live at: [mywdka.github.io/words-on-a-string]
 
 ## Index
-[[https://mywdka.github.io/words-on-a-string **Slide_01**]]: title
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_02**]]: subtitle
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_03**]]: welcome
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_04**]]: calendar
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_05**]]: classes
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_06**]]: intermezzo (click to reveal words)
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_07**]]: P5js (pixelated title)
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_08**]]: What is p5js?
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_09**]]: p5js editor
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_10**]]: KICK-OFF (with examples)
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_11**]]: CLASS #2 (with examples)
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_12**]]: CLASS #3 (with examples)
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_13**]]: SUPPORT
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_14**]]: Where to find Leo
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_15**]]: words-on-a-string explainer
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_16**]]: Why?
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_17**]]: Deliverables
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_18**]]: Resources
-[[https://mywdka.github.io/words-on-a-string/slide_02/ **Slide_19**]]: Download this website
+[**Slide_01**](https://mywdka.github.io/words-on-a-string): title
+
+[**Slide_02**](https://mywdka.github.io/words-on-a-string/slide_02/): subtitle
+
+[**Slide_03**](https://mywdka.github.io/words-on-a-string/slide_03/): welcome
+
+[**Slide_04**](https://mywdka.github.io/words-on-a-string/slide_04/): calendar
+
+[**Slide_05**](https://mywdka.github.io/words-on-a-string/slide_05/): classes
+
+[**Slide_06**](https://mywdka.github.io/words-on-a-string/slide_06/): intermezzo (click to reveal words)
+
+[**Slide_07**](https://mywdka.github.io/words-on-a-string/slide_07/): P5js (pixelated title)
+
+[**Slide_08**](https://mywdka.github.io/words-on-a-string/slide_08/): What is p5js?
+
+[**Slide_09**](https://mywdka.github.io/words-on-a-string/slide_09/): p5js editor
+
+[**Slide_10**](https://mywdka.github.io/words-on-a-string/slide_10/): KICK-OFF (with examples)
+
+[**Slide_11**](https://mywdka.github.io/words-on-a-string/slide_11/): CLASS #2 (with examples)
+
+[**Slide_12**](https://mywdka.github.io/words-on-a-string/slide_12/): CLASS #3 (with examples)
+
+[**Slide_13**](https://mywdka.github.io/words-on-a-string/slide_13/): SUPPORT
+
+[**Slide_14**](https://mywdka.github.io/words-on-a-string/slide_14/): Where to find Leo
+
+[**Slide_15**](https://mywdka.github.io/words-on-a-string/slide_15/): words-on-a-string explainer
+
+[**Slide_16**](https://mywdka.github.io/words-on-a-string/slide_16/): Why?
+
+[**Slide_17**](https://mywdka.github.io/words-on-a-string/slide_17/): Deliverables
+
+[**Slide_18**](https://mywdka.github.io/words-on-a-string/slide_18/): Resources
+
+[**Slide_19**](https://mywdka.github.io/words-on-a-string/slide_19/): Download this website
 
 ---
