@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Labrada';
+    src: url('../fonts/Labrada.ttf');
+}
+
+@font-face {
+    font-family: 'Necto Mono';
+    src: url('../fonts/NectoMono-Regular.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align:center;
+}
+
+h1 {
+    font-family: 'Labrada';
+    font-size:6em;
+}
+
+h2 {
+    font-family: 'Necto Mono';
+    font-size: 4em;
+    width: 60%;
+    margin:auto
+}

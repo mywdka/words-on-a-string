@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Labrada";
+  src: url("../fonts/Labrada.ttf");
+}
+
+@font-face {
+  font-family: "Necto Mono";
+  src: url("../fonts/NectoMono-Regular.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Labrada";
+  font-size: 6em;
+  color: red;
+  text-shadow: 2px 2px black;
+  margin: 0.5em auto;
+}
+
+p {
+  font-family: "Necto Mono";
+  font-size: 2em;
+  width: 60%;
+  margin: 0.5em auto;
+}
+
+.interaction:hover {
+  
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0%   { cursor: auto; background-color: white; color: black}
+  5%   { cursor: default; }
+  10%  { cursor: none; }
+  15%  { cursor: context-menu; }
+  20%  { cursor: help; }
+  25%  { cursor: pointer; }
+  30%  { cursor: progress; }
+  35%  { cursor: wait; }
+  40%  { cursor: cell; }
+  45%  { cursor: crosshair; }
+  50%  { cursor: text; background-color: black; color: white}
+  55%  { cursor: vertical-text; }
+  60%  { cursor: alias; }
+  65%  { cursor: copy; }
+  70%  { cursor: move; }
+  75%  { cursor: no-drop; }
+  80%  { cursor: not-allowed; }
+  85%  { cursor: grab; }
+  90%  { cursor: grabbing; }
+  95%  { cursor: all-scroll; }
+  100% { cursor: zoom-in; background-color: white; color: black}
+}
