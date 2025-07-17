@@ -1,8 +1,8 @@
 # words-on-a-string
 
-This is the repository for the interactive syllabus of *words-on-a-string*, the interaction station's course on animated and interactive text on the web.
+This is the repository for the interactive syllabus of *words-on-a-string*: an Interaction Station course on animated and interactive text for the web. Most of the sketches are made in [p5js](p5js.org).
 
-The syllabus is live at: [mywdka.github.io/words-on-a-string]
+The syllabus is live at [mywdka.github.io/words-on-a-string](mywdka.github.io/words-on-a-string)
 
 ## Index
 [**Slide_01**](https://mywdka.github.io/words-on-a-string): Title
