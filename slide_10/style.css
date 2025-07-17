@@ -19,7 +19,7 @@ h1 {
   color: red;
   font-family: "Labrada";
   font-size: 3em;
-  margin-bottom:0.1em
+  margin-bottom: 0.1em;
 }
 
 p {
@@ -41,21 +41,21 @@ p {
 }
 
 .caption {
-    font-family: 'Necto Mono';
+  font-family: "Necto Mono";
 }
 
 .next-arrow {
   position: fixed;
   top: 50%;
-  right: 1em;               /* distance from the right edge */
-  font-family: 'Necto Mono';
-  font-size: 2.5rem;         /* size of the arrow */
+  right: 1em;
+  font-family: "Necto Mono";
+  font-size: 2.5rem;
   text-decoration: none;
-  color: #333;               /* arrow color */
-  background: rgba(255,255,255,0.8);
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
   padding: 0.2em 0.5em;
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background 0.2s, color 0.2s;
   z-index: 1000;
 }

@@ -34,14 +34,14 @@ function draw() {
   for (i = 0; i < message.length; i++) {
     let letterWidth = textWidth(message[i]);
 
-    let y = sin(i * mouseX * 0.01);
-    y = map(y, -1, 1, 0, height);
+    let y = sin(i * 0.75 + mouseX/25);
+    y = map(y, -1, 1, 50, height-50);
 
     let x = i * letterWidth + messageWidth / 3;
 
     text(message[i], x, y);
 
-    text("↑", mouseX, mouseY);
+    text("↔", mouseX, mouseY);
     index = mouseX/width
   }
 }
