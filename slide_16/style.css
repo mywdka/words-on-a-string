@@ -34,6 +34,7 @@ p {
   animation: move 2s ease-in-out infinite;
 }
 
+/* all cursors in 2 seconds! lesssgooooo!!!! */
 @keyframes move {
   0%   { cursor: auto; background-color: white; color: black}
   5%   { cursor: default; }

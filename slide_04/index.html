@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>🧵 words on a string</title>
     <link rel="stylesheet" href="style.css">
@@ -12,75 +13,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        <p>
+</head>
+
+<body>
+    <p>
         this right here is our schedule: a big KICK-OFF, followed by 2 classes and
         3 feedback sessions. <br />
         every class lasts 2 hours, but you are so many we have to schedule two
         days a week 😍
-        </p>
+    </p>
 
-        <table class="calendar"> <!-- tables are a super handy html tool! You can create rows <tr>, cells <td>, and custom-style them -->
-            <!-- week 1 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">1 sept</span></td>
-                <td><span class="weekday">TUE</span><br><span class="date">2 sept</span></td>
-                <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">3 sept</span><div class="event">KICK-OFF</div></td>
-                <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">4 sept</span><div class="event">KICK-OFF</div></td>
-                <td><span class="weekday">FRI</span><br><span class="date">5 sept</span></td>
-            </tr>
-            <!-- week 2 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">8 sept</span></td>
-                <td><span class="weekday">TUE</span><br><span class="date">9 sept</span></td>
-                <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">10 sept</span><div class="event">CLASS #2</div></td>
-                <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">11 sept</span><div class="event">CLASS #2</div></td>
-                <td><span class="weekday">FRI</span><br><span class="date">12 sept</span></td>
-            </tr>
-            <!-- week 3 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">15 sept</span></td>
-                <td><span class="weekday">TUE</span><br><span class="date">16 sept</span></td>
-                <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">17 sept</span><div class="event">CLASS #3</div></td>
-                <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">18 sept</span><div class="event">CLASS #3</div></td>
-                <td><span class="weekday">FRI</span><br><span class="date">19 sept</span></td>
-            </tr>
-            <!-- week 4 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">22 sept</span></td>
-                <td><span class="weekday">TUE</span><br><span class="date">23 sept</span></td>
-                <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">24 sept</span><div class="event">SUPPORT</div></td>
-                <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">25 sept</span><div class="event">SUPPORT</div></td>
-                <td><span class="weekday">FRI</span><br><span class="date">26 sept</span></td>
-            </tr>
-            <!-- week 5 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">29 sept</span></td>
-                <td><span class="weekday">TUE</span><br><span class="date">30 sept</span></td>
-                <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">1 oct</span><div class="event">SUPPORT</div></td>
-                <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">2 oct</span><div class="event">SUPPORT</div></td>
-                <td><span class="weekday">FRI</span><br><span class="date">3 oct</span></td>
-            </tr>
-            <!-- week 6 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">6 oct</span></td>
-                <td><span class="weekday">TUE</span><br><span class="date">7 oct</span></td>
-                <td><span class="weekday">WED</span><br><span class="date">8 oct</span></td>
-                <td><span class="weekday">THU</span><br><span class="date">9 oct</span></td>
-                <td><span class="weekday">FRI</span><br><span class="date">10 oct</span></td>
-            </tr>
-            <!-- week 7 -->
-            <tr>
-                <td><span class="weekday">MON</span><br><span class="date">13 oct</span></td>
-                <td style="background-color:cornsilk"><span class="weekday">TUE</span><br><span class="date">14 oct</span><div class="event">SUPPORT</div></td>
-                <td><span class="weekday">WED</span><br><span class="date">15 oct</span></td>
-                <td><span class="weekday">THU</span><br><span class="date">16 oct</span></td>
-                <td><span class="weekday">FRI</span><br><span class="date">17 oct</span></td>
-            </tr>
-        </table>        
+    <table class="calendar">
+        <!-- tables are a super handy html tool! You can create rows <tr>, cells <td>, and custom-style them -->
+        <!-- week 1 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">1 sept</span></td>
+            <td><span class="weekday">TUE</span><br><span class="date">2 sept</span></td>
+            <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">3 sept</span>
+                <div class="event">KICK-OFF</div>
+            </td>
+            <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">4 sept</span>
+                <div class="event">KICK-OFF</div>
+            </td>
+            <td><span class="weekday">FRI</span><br><span class="date">5 sept</span></td>
+        </tr>
+        <!-- week 2 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">8 sept</span></td>
+            <td><span class="weekday">TUE</span><br><span class="date">9 sept</span></td>
+            <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">10 sept</span>
+                <div class="event">CLASS #2</div>
+            </td>
+            <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">11 sept</span>
+                <div class="event">CLASS #2</div>
+            </td>
+            <td><span class="weekday">FRI</span><br><span class="date">12 sept</span></td>
+        </tr>
+        <!-- week 3 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">15 sept</span></td>
+            <td><span class="weekday">TUE</span><br><span class="date">16 sept</span></td>
+            <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">17 sept</span>
+                <div class="event">CLASS #3</div>
+            </td>
+            <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">18 sept</span>
+                <div class="event">CLASS #3</div>
+            </td>
+            <td><span class="weekday">FRI</span><br><span class="date">19 sept</span></td>
+        </tr>
+        <!-- week 4 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">22 sept</span></td>
+            <td><span class="weekday">TUE</span><br><span class="date">23 sept</span></td>
+            <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">24 sept</span>
+                <div class="event">SUPPORT</div>
+            </td>
+            <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">25 sept</span>
+                <div class="event">SUPPORT</div>
+            </td>
+            <td><span class="weekday">FRI</span><br><span class="date">26 sept</span></td>
+        </tr>
+        <!-- week 5 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">29 sept</span></td>
+            <td><span class="weekday">TUE</span><br><span class="date">30 sept</span></td>
+            <td style="background-color:cornsilk"><span class="weekday">WED</span><br><span class="date">1 oct</span>
+                <div class="event">SUPPORT</div>
+            </td>
+            <td style="background-color:cornsilk"><span class="weekday">THU</span><br><span class="date">2 oct</span>
+                <div class="event">SUPPORT</div>
+            </td>
+            <td><span class="weekday">FRI</span><br><span class="date">3 oct</span></td>
+        </tr>
+        <!-- week 6 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">6 oct</span></td>
+            <td><span class="weekday">TUE</span><br><span class="date">7 oct</span></td>
+            <td><span class="weekday">WED</span><br><span class="date">8 oct</span></td>
+            <td><span class="weekday">THU</span><br><span class="date">9 oct</span></td>
+            <td><span class="weekday">FRI</span><br><span class="date">10 oct</span></td>
+        </tr>
+        <!-- week 7 -->
+        <tr>
+            <td><span class="weekday">MON</span><br><span class="date">13 oct</span></td>
+            <td style="background-color:cornsilk"><span class="weekday">TUE</span><br><span class="date">14 oct</span>
+                <div class="event">SUPPORT</div>
+            </td>
+            <td><span class="weekday">WED</span><br><span class="date">15 oct</span></td>
+            <td><span class="weekday">THU</span><br><span class="date">16 oct</span></td>
+            <td><span class="weekday">FRI</span><br><span class="date">17 oct</span></td>
+        </tr>
+    </table>
 
-        <p><a href="../slide_05">check out the classes content</a></p>
-    </body>
+    <p><a href="../slide_05">check out the classes content</a></p>
+</body>
+
 </html>
-

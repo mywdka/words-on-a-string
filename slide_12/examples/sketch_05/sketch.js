@@ -2,39 +2,35 @@ let word = "";
 
 function setup() {
   createCanvas(400, 200);
+
+  // text settings
   textAlign(CENTER, CENTER);
   textFont("Georgia");
-  textSize(32);
-  textWrap(WORD);
+  textSize(24);
   textStyle(BOLD);
   rectMode(CENTER);
+  textWrap(WORD);
   fill("white");
   stroke(0);
-  strokeWeight(2)
+  strokeWeight(2);
 
-  // Rotterdam: lat=51.9225, lon=4.4792
-  let url =
+  // load current weather code for Rotterdam (lat=51.9225, lon=4.4792)
+  const url =
     "https://api.open-meteo.com/v1/forecast?latitude=51.9225&longitude=4.4792&current=weather_code";
   loadJSON(url, gotWeather);
 }
 
 function gotWeather(data) {
-  let code = data.current.weather_code;
-  // open-oeteo weather codes: simplified mapping
-  if (code == 0) {
-    word = "bright and warm";
-  } else {
-    word = "not bright and not warm";
-  }
+  // code 0 means clear weather; anything else we treat as not clear
+  word =
+    data.current.weather_code === 0
+      ? "bright and warm and"
+      : "not as bright and not as warm but";
 }
 
 function draw() {
-  background('darkgreen');
-  text(
-    "today, here, the world is " + word + " and I am alright",
-    width / 2,
-    height / 2,
-    width - 25,
-    height - 25
-  );
+  background("darkgreen");
+  // build and draw the sentence in the middle
+  const sentence = "now, here, the world is " + word + " I'll be alright";
+  text(sentence, width / 2, height / 2, width-50, height);
 }

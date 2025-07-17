@@ -2,7 +2,7 @@ function setup() {
   noCanvas(); // we inject directly into html, no canvas
 
   const wordsText = document.getElementById('words').innerText; // get content of text
-  const words = select('#words').html(''); // select text object and clear
+  const words = select('#words').html(''); // select text element from its id and clear it
   
   // run a loop that goes through each letter and...
   for (let i = 0; i < wordsText.length; i++) {

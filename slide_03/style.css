@@ -19,7 +19,7 @@
 .course-title{
     font-family: 'Labrada';
     font-size:64pt;
-    animation: breath 10s ease-in-out infinite;
+    animation: breath 10s ease-in-out infinite; /* we call the animation from css */
 }
 
 /* animation for text */

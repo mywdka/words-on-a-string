@@ -24,18 +24,16 @@ function setup() {
   textStyle(BOLD);
   textWrap(WORD);
   stroke(0)
-  
   fill("crimson");
 }
 
 function draw() {
   background("darkgreen");
 
-  // display name
-
+  // display name at 'nameIndex'
   text(myData[nameIndex].name, width/2, height/2);
 
-  // move to next name
+  // move to next name (increase index)
   nameIndex++;
 
   // reset when reaches end of list

@@ -1,12 +1,16 @@
+// the message to display, broken into individual characters later
 let message = "move me";
 
+// controls the color interpolation (0 to 1)
 let index = 0;
-let direction = 0.01;
-let scrollLevel = 0;
+
+// width of the whole message in pixels
+let messageWidth;
 
 function setup() {
   createCanvas(400, 200);
 
+  // set up text appearance
   textAlign(CENTER, CENTER);
   textFont("Courier New");
   textStyle(BOLD);
@@ -15,33 +19,42 @@ function setup() {
   strokeWeight(4);
   fill("white");
 
+  // measure the width of the full message
   messageWidth = textWidth(message);
 
-  from = color(0, 191, 255);
-  to = color(75, 0, 130);
+  // define start and end colors for background
+  from = color(0, 191, 255); // deep sky blue
+  to   = color(75, 0, 130);  // indigo
 
-  // initialise
+  // draw initial background
   background(from);
-  for (i = 0; i < message.length; i++) {
-    text(message[i], 0, height / 2);
-  }
 }
 
 function draw() {
-  light = lerpColor(from, to, index);
+  // update background color based on mouseX position
+  index = mouseX / width;
+  let light = lerpColor(from, to, index);
   background(light);
 
-  for (i = 0; i < message.length; i++) {
+  // draw each character with a vertical sine-wave motion
+  // for each letter in the message...
+  for (let i = 0; i < message.length; i++) {
+    // ...width of this single character
     let letterWidth = textWidth(message[i]);
 
-    let y = sin(i * 0.75 + mouseX/25);
-    y = map(y, -1, 1, 50, height-50);
+    // ...create sine value based on character index and mouseX
+    let y = sin(i * 0.75 + mouseX / 25);
+    
+    // map sine output (-1..1) to vertical range (50..height-50)
+    y = map(y, -1, 1, 50, height - 50);
 
+    // x position: spread characters out and shift right by a third of the message width
     let x = i * letterWidth + messageWidth / 3;
 
+    // draw the character at its computed (x, y)
     text(message[i], x, y);
-
-    text("↔", mouseX, mouseY);
-    index = mouseX/width
   }
+
+  // draw a doublesided arrow at the mouse position
+  text("↔", mouseX, mouseY);
 }

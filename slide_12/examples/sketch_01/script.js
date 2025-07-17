@@ -21,7 +21,7 @@ function parseLines(rawLines) {
   return rawLines.map(line => ({ text: line }));
 }
 
-// create a <span> element with each letter and its correct highlight color
+// create a <span> element with each letter and its respective highlight color
 function updateTextTransition() {
   const fromLine = paragraphs[index] || fallback;
   const toLine = paragraphs[index + 1] || fallback;

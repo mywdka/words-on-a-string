@@ -2,23 +2,25 @@ let txt_one = "scrolling ";
 let txt_two = "sideways ";
 let speed = 2;
 
-let x1 = 0, x2 = 0;
+let x1 = 0,
+  x2 = 0;
 
 function setup() {
   createCanvas(400, 200);
-  textFont("serif");
+
+  // set up text appearance
+  textFont("sans-serif");
   textStyle(BOLDITALIC);
   textSize(64);
   fill("lemonchiffon");
   textAlign(LEFT, CENTER);
 
-  // measures text widths once 
-  // (how long is the word in pixels)
+  // measure the width of each word in pixels
   w1 = textWidth(txt_one);
   w2 = textWidth(txt_two);
 
-  // finds how many words fit in one line of canvas
-  // then add one more
+  // calculate how many copies of the word fit across the canvas
+  // add one extra to avoid gaps
   count1 = ceil(width / w1) + 1;
   count2 = ceil(width / w2) + 1;
 }
@@ -26,21 +28,23 @@ function setup() {
 function draw() {
   background("darkblue");
 
-  // 'scrolling' x position
-  x1 = x1 - 2 // subtracts 2 every frame
-  x1 = x1 % w1; // how close is x1 to w1?
-  if (x1 > 0) x1 -= w1; // if x1 crosses w1 lets reset
+  // update x position for 'scrolling' word (moves left)
+  x1 = x1 - speed; // move x1 to the left by a few pixels
+  x1 = x1 % w1; // wrap x1 around when it passes one word length
+  if (x1 > 0) x1 -= w1; // ensure x1 is always negative or zero for clean looping
 
-  // 'sideways' x position
-  x2 = (x2 + 2) % w2;
+  // update x position for 'sideways' word (moves right)
+  // same code but shorter syntax
+  x2 = (x2 + speed) % w2;
   if (x2 > 0) x2 -= w2;
 
-  // draws enough copies to fill the width
-  // uses a loop (i is 0, max i is count1, i increases by 1)
-  for (let i = 0; i < count1; i++) {
-    text(txt_one, x1 + i * w1, height * 3/8);
+  // draw enough copies of each word to cover the canvas
+  for (let n = 0; n < count1; n++) {
+    // display n texts with variable x coordinates
+    // text('scrolling', <400 to 0> + <1 to 3> * 246, 75)
+    text(txt_one, x1 + n * w1, (height * 3) / 8);
   }
-  for (let i = 0; i < count2; i++) {
-    text(txt_two, x2 + i * w2, height * 6/8);
+  for (let n = 0; n < count2; n++) {
+    text(txt_two, x2 + n * w2, (height * 6) / 8);
   }
 }

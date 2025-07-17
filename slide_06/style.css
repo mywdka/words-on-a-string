@@ -10,12 +10,12 @@ body{
     cursor: pointer;
 }
 
-/* centering canvas */
 canvas{
+  /* centering canvas */
   width:100%;
   margin:50vh 0 0 50vw;
   transform:translate(-50%,-50%);
-
+  
   border: 1px solid black;
 }
 

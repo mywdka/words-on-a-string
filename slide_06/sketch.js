@@ -7,23 +7,24 @@ function setup() {
   // text variables
   textSize(64);
   textAlign(CENTER, CENTER);
-  textFont('Garamond')
+  textFont('Hershey'); // you can use this font because it's loaded in style.css
   rectMode(CENTER);
+  fill('white')
 }
 
 function draw() {
-  background('cornsilk');
+  background('red');
 
-  // this variable contains the text up to "currentIndex", which is zero at the beginning
+  // this variable contains the text content from zero to "currentIndex"
   let textToShow = words.slice(0, currentIndex + 1).join("");
 
-  // display the text
+  // display the text (text, x coordinate, y coordinate, text-box width)
   text(textToShow, width/2, height/2, 800);
 
   // if we reach the end of the sentence, display the link <a>
   if (currentIndex >= words.length){
     select('.p5').hide()
-    createA('../slide_07/', 'i dont know lets find out!').position(0,windowHeight/2);
+    createA('../slide_07/', 'i dont know lets find out!').position(0, windowHeight/2);
     noLoop(); // stop the sketch from running
   }
 }

@@ -22,7 +22,7 @@ body {
   gap: 1em;
 }
 
-.chapter {
+.block {
   display: flex;
   gap: 2em;
   padding: 1em;
@@ -35,11 +35,19 @@ body {
   font-size: 2em;
   font-weight: bold;
   text-shadow: 1px 1px black;
-  color:crimson
-
+  color: crimson;
 }
 
 .text {
   flex: 1;
-  font-family: 'Necto Mono';
+  font-family: "Necto Mono";
+}
+
+button {
+  margin-top: 10px;
+  background-color: crimson;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
 }

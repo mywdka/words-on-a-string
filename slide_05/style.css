@@ -9,7 +9,9 @@
 }
 
 body {
-    display: flex;
+    /* flex is a display method that stretches content over the window */
+    /* for more info, go to: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex; 
     align-items: stretch;
     padding: 1em;
     margin:1em 1em;
@@ -17,7 +19,7 @@ body {
     max-height: 100vh;
 }
 
-.text-on-the-side {
+.side-text-box {
     width: 20%;
     margin-left: 1em;
 }
@@ -71,13 +73,4 @@ a {
 .contentText {
     font-family: 'Necto Mono';
     font-size: 1.5em;
-}
-
-@keyframes sine {
-    0%, 100% {
-        transform: translate(0,-25%)
-    }
-    50% {
-        transform: translate(0,25%)
-    }
 }

@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /* disables scrolling */
 }
 
 h1 {
@@ -22,6 +22,5 @@ h2 {
     font-family: 'Necto Mono'
 }
 canvas {
-        cursor: pointer;
-
+    cursor: pointer; /* i want to show a pointer to make sure the user clicks */
 }

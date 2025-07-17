@@ -1,64 +1,65 @@
 let dogBreeds = [];
 let selectedBreed = "";
 
-let textPos;
+// we'll use this for the text block's coordinates and position
+let textBlock;
 
 function preload() {
-  // Load the JSON file with dog breeds
+  // load list of dog breeds
   loadJSON(
     "https://raw.githubusercontent.com/dariusk/corpora/refs/heads/master/data/animals/dogs.json",
-    gotData
+    (data) => (dogBreeds = data.dogs)
   );
-}
-
-function gotData(data) {
-  dogBreeds = data.dogs;
 }
 
 function setup() {
   createCanvas(400, 200);
-  textPos = [width / 2, height / 2, width - 50, height - 50];
 
-  textFont('Georgia');
-  stroke(0)
-  strokeWeight(2)
-  textStyle(BOLD);
+  // block's coords and pos
+  textBlock = [width / 2, height / 2, width - 50, height - 50];
+
+  // text style
+  textFont("Georgia");
   textSize(24);
+  textStyle(BOLD);
   textAlign(CENTER, CENTER);
+  strokeWeight(2);
   rectMode(CENTER);
-  textWrap(WORD);
 
-  createWallpaper();
-  print(...textPos);
-
-  text("Type a letter to get a dog breed!", ...textPos);
+  // draw the background bones and initial message
+  drawBackground();
+  text("type a letter to get a dog breed!", ...textBlock);
 }
 
 function keyPressed() {
   let letter = key.toLowerCase();
-  if (letter.match(/[a-z]/)) {
+  if (letter >= "a" && letter <= "z") {
+
+    // find breeds starting with the letter
     let matches = dogBreeds.filter((b) => b.toLowerCase().startsWith(letter));
-    if (matches.length > 0) {
-      selectedBreed = random(matches);
-    } else {
-      selectedBreed = "my best friend"; // if user presses 'q', 'u', 'x', or 'z'
-    }
-    
-    createWallpaper()
-    text(`🐕 Good boy, ${selectedBreed}, good boy 🐕`, ...textPos);
+
+    // pick one or default
+    selectedBreed = matches.length ? random(matches) : "my best friend";
+
+    // redraw background and show new message
+    drawBackground();
+    text(`🐕 good boy, ${selectedBreed}, good boy 🐕`, ...textBlock);
   }
 }
 
-function createWallpaper() {
-  clear()
+function drawBackground() {
   background("darkgreen");
 
-  for (x = 0; x <= width; x += 50) {
-    for (y = 0; y <= height; y += 50) {
+  // draw bone pattern
+  fill(255);
+  for (let x = 0; x <= width; x += 50) {
+    for (let y = 0; y <= height; y += 50) {
       text("🦴", x, y);
     }
   }
-  fill(237, 20, 61, 255 / 1.5);
-  rect(...textPos);
+  
+  // semi-transparent box behind text
+  fill(237, 20, 61, 150);
+  rect(...textBlock);
   fill("white");
 }

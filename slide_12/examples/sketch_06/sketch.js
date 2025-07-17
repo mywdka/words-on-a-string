@@ -1,18 +1,20 @@
+// array to hold common words from JSON
 let commonWords = [];
 
 function preload() {
+  // load the list of common words before setup()
   loadJSON(
     "https://raw.githubusercontent.com/dariusk/corpora/master/data/words/common.json",
-    gotWords
+    (data) => {
+      commonWords = data.commonWords;
+    }
   );
-}
-
-function gotWords(data) {
-  commonWords = data.commonWords;
 }
 
 function setup() {
   createCanvas(400, 200);
+
+  // text settings
   textAlign(CENTER, CENTER);
   textSize(64);
   textStyle(BOLD);
@@ -20,15 +22,16 @@ function setup() {
   fill("crimson");
   stroke(0);
   strokeWeight(4);
-
 }
 
 function draw() {
-  background("darkgreen");
+  background("darkgreen"); // green background
 
-  let x = floor(map(mouseX, 0, width, 0, commonWords.length));
-  let y = floor(map(mouseY, 0, height, 0, commonWords.length));
-  let word = commonWords[(x + y) % commonWords.length];
+  // pick one word based on mouseX and mouseY
+  // map mouseX + mouseY to an index in the array
+  let i = map(mouseX + mouseY, 0, width + height, 0, commonWords.length);
+  i = round(i) // round up decimals
 
-  text(word, width / 2, height / 2);
+  // draw the chosen word in the center
+  text(commonWords[i], width / 2, height / 2);
 }

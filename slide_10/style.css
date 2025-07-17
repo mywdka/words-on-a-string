@@ -33,10 +33,12 @@ p {
   margin: auto;
   width: 80vw;
   padding: 1em;
+
+  /* the display method 'grid' is a simple method to make grid in html */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* combine it with grid-template-columns */
+  grid-template-rows: repeat(2, auto); /* and grid-template-rows if you like */
+  gap: 1rem; /* and add a gap for beauty ;) */
 }
 
 .caption {
@@ -44,18 +46,25 @@ p {
 }
 
 .next-arrow {
+  /* position fixed places the arrow in a fixed position 🤔 */
   position: fixed;
   top: 50%;
-  right: 1em;
+  right: 1em; /* this adjusts it to the right, with a margin of 1em=16pt */
+
   font-family: "Necto Mono";
   font-size: 2.5rem;
   text-decoration: none;
   color: #333;
+
   background: rgba(255, 255, 255, 0.8);
   padding: 0.2em 0.5em;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: background 0.2s, color 0.2s;
+
+  /* transition allows you to inject an animation when a variable changes (e.g. due to hover) */
+  transition: background 0.2s, color 0.2s; 
+
+  /* put it in foreground, so it stays clickable */
   z-index: 1000;
 }
 .next-arrow:hover {
