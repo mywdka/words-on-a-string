@@ -2,7 +2,7 @@
 
 This is the repository for the interactive syllabus of *words-on-a-string*, the interaction station's course on animated and interactive text on the web.
 
-The syllabus is live at: [mywdka.github.io/words-on-a-string]
+The syllabus is live at [mywdka.github.io/words-on-a-string](mywdka.github.io/words-on-a-string)
 
 ## Index
 [**Slide_01**](https://mywdka.github.io/words-on-a-string): Title
