@@ -1,5 +1,8 @@
 let parsedLines = [];
 let rawText = "";
+let chapters = [];
+let currentChapterIndex = 0;
+let nextButton; // reference to the button
 
 function preload() {
   rawText = loadStrings("text.txt");
@@ -8,62 +11,56 @@ function preload() {
 function setup() {
   noCanvas();
   parseText(rawText);
+  createNextButton();
+  renderNextChapter(); // render the first chapter
 }
 
 function parseText(lines) {
   let chapterIndex = -1;
+  let tempChapters = {};
 
   for (let line of lines) {
-    if (line.startsWith("-title:")) {
+    if (line.startsWith("-block:")) {
       chapterIndex++;
-      parsedLines.push({
-        type: "title",
-        text: line.replace("-title:", "").trim(),
-        chapterIndex
-      });
+      tempChapters[chapterIndex] = {
+        title: line.replace("-block:", "").trim(),
+        texts: [],
+      };
     } else {
-      parsedLines.push({
-        type: "text",
-        text: line,
-        chapterIndex
-      });
+      if (chapterIndex >= 0) {
+        tempChapters[chapterIndex].texts.push(line);
+      }
     }
   }
 
-  renderText();
+  chapters = Object.values(tempChapters);
 }
 
-function renderText() {
+function createNextButton() {
+  nextButton = createButton("NEXT BLOCK").style(
+    "margin-top: 10px; background-color: crimson; color: white; font-family: monospace; font-weight: bold; cursor:pointer"
+  );
+  nextButton.mousePressed(renderNextChapter);
+}
+
+function renderNextChapter() {
+  if (currentChapterIndex >= chapters.length) return;
+
   const container = select("#content");
-  container.html(""); // clear previous
+  const chapter = chapters[currentChapterIndex];
 
-  let chapters = {};
+  const chapterDiv = createDiv().addClass("chapter");
+  const titleDiv = createDiv(chapter.title).addClass("title");
+  const textDiv = createDiv(chapter.texts.join("<br>")).addClass("text");
 
-  for (let entry of parsedLines) {
-    const idx = entry.chapterIndex;
-    if (!chapters[idx]) {
-      chapters[idx] = {
-        title: "",
-        texts: []
-      };
-    }
+  chapterDiv.child(titleDiv);
+  chapterDiv.child(textDiv);
+  container.child(chapterDiv);
 
-    if (entry.type === "title") {
-      chapters[idx].title = entry.text;
-    } else if (entry.type === "text") {
-      chapters[idx].texts.push(entry.text);
-    }
-  }
+  currentChapterIndex++;
 
-  for (let idx in chapters) {
-    const chapter = chapters[idx];
-    const chapterDiv = createDiv().addClass("chapter");
-
-    const titleDiv = createDiv(chapter.title).addClass("title");
-    const textDiv = createDiv(chapter.texts.join("<br>")).addClass("text");
-
-    chapterDiv.child(titleDiv);
-    chapterDiv.child(textDiv);
-    container.child(chapterDiv);
+  // remove button if we've reached the last chapter
+  if (currentChapterIndex >= chapters.length) {
+    nextButton.remove();
   }
 }
