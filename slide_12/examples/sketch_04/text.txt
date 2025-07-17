@@ -1,0 +1,22 @@
+-title:
+How to format a big corpus of text
+
+-title: Intro
+This is a sketch that demonstrates how from a simple text file you can format a long webpage
+
+It's all a matter of how you combine html, css, and javascript
+
+In this particular sketch I'm using a text file called "text.txt".
+It's a file I filled up with the content of the text you are reading
+
+I, then, loaded the text.txt in javascript, and used a function to read whether a line of text is a title or simple text
+
+if it is a title, it will look like this:
+
+-title: This is a title
+If it is text, it looks like this.
+
+This is possible by injecting a new HTML element for each piece of text. Either [title] or [paragraph]
+
+-title: How to
+Just look at the page source, or download the interactive syllabus and navigate to [slide_12/sketch_04]

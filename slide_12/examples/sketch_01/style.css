@@ -1,0 +1,30 @@
+body {
+  font-family: monospace;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: darkgreen;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  font-size: 1.5em;
+  width: 80%;
+  max-width: 600px;
+  line-height: 1.6;
+  padding: 1em;
+
+}
+
+.letter {
+  transition: background-color 0.3s, color 0.3s;
+  color:crimson;
+  background-color:white
+}
+.highlight {
+  background-color: crimson;
+  color:white
+}
