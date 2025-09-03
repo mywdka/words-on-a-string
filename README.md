@@ -45,20 +45,14 @@ The syllabus is live at [wdka.codeberg.page/words-on-a-string](https://wdka.code
 
 ---
 
-# Typeface Repositories
+## Typeface Repositories
 
-[usemodify.com](https://usemodify.com/)
-
-[open-foundry.com](https://open-foundry.com/fonts)
-
-[collletttivo.it](https://www.collletttivo.it/typefaces)
-
-[theleagueofmovabletype.com](https://www.theleagueofmoveabletype.com/)
-
-[velvetyne.fr](https://velvetyne.fr/)
-
-[typotheque.luuse.fun](https://typotheque.luuse.fun/)
-
+[usemodify.com](https://usemodify.com/) •
+[open-foundry.com](https://open-foundry.com/fonts) •
+[collletttivo.it](https://www.collletttivo.it/typefaces) •
+[theleagueofmovabletype.com](https://www.theleagueofmoveabletype.com/) •
+[velvetyne.fr](https://velvetyne.fr/) •
+[typotheque.luuse.fun](https://typotheque.luuse.fun/) •
 [hershey-noailles.luuse.io](http://hershey-noailles.luuse.io/www/)
 
 ---
